@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #ffffff;
+  --bg-secondary: #f8fafc;
+  --text: #0f172a;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --accent: #2563eb;
+}
+
+.dark {
+  --bg: #0f172a;
+  --bg-secondary: #1e293b;
+  --text: #f1f5f9;
+  --text-muted: #94a3b8;
+  --border: #334155;
+  --accent: #3b82f6;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.prose-editor p {
+  margin: 0.25em 0;
+}
+
+.prose-editor h1 { font-size: 2em; font-weight: 700; margin: 0.5em 0; }
+.prose-editor h2 { font-size: 1.5em; font-weight: 600; margin: 0.5em 0; }
+.prose-editor h3 { font-size: 1.25em; font-weight: 600; margin: 0.5em 0; }
+.prose-editor h4 { font-size: 1.1em; font-weight: 600; margin: 0.5em 0; }
+
+.prose-editor ul, .prose-editor ol { padding-left: 1.5em; margin: 0.5em 0; }
+.prose-editor table { border-collapse: collapse; width: 100%; }
+.prose-editor td, .prose-editor th { border: 1px solid var(--border); padding: 0.5em 0.75em; }
